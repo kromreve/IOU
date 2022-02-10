@@ -1,3 +1,35 @@
+:root{
+    --main-bg-color: #00E0D4;
+    --box-color: white;
+}
+
 body{
-    background-color: burlywood;
+    background-color: var(--main-bg-color);
+}
+
+.boxes{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    background-color: var(--box-color);
+    height: 300px;
+    width: 300px;
+    margin: 5px 15px 5px 5px;
+}
+
+.center{
+    background-color: var(--box-color);
+    height: 300px;
+    width: 300px;
+    margin: 5px 15px 5px 15px;
+}
+
+.right{
+    background-color: var(--box-color);
+    height: 300px;
+    width: 300px;
+    margin: 5px 5px 5px 15px;
 }

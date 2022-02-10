@@ -1,35 +1,43 @@
 :root{
-    --main-bg-color: #00E0D4;
+    --main-bg-color-blue: #00E0D4;
+    --main-bg-color-red: #ff3300;
     --box-color: white;
 }
 
 body{
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color-blue);
+    align-items: center;
+    height: 100vh;
 }
 
 .boxes{
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 100%;
+    
 }
 
 .left{
     background-color: var(--box-color);
     height: 300px;
     width: 300px;
-    margin: 5px 15px 5px 5px;
+    margin: 5px 25px 5px 5px;
+    border-radius: 5px;
 }
 
 .center{
     background-color: var(--box-color);
     height: 300px;
     width: 300px;
-    margin: 5px 15px 5px 15px;
+    margin: 5px 25px 5px 25px;
+    border-radius: 5px;
 }
 
 .right{
     background-color: var(--box-color);
     height: 300px;
     width: 300px;
-    margin: 5px 5px 5px 15px;
+    margin: 5px 5px 5px 25px;
+    border-radius: 5px;
 }

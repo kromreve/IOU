@@ -1,105 +1,134 @@
-:root{
-    --main-bg-color-blue: #00E0D4;
-    --main-bg-color-red: #ff3300;
-    --box-color: white;
+:root {
+  --main-bg-color-blue: #00e0d4;
+  --main-bg-color-red: #ff3300;
+  --box-color: white;
 }
 
-body{
-    /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-    background-image: linear-gradient(to top, rgb(183, 240, 240), var(--main-bg-color-blue));
-    align-items: center;
-    height: 100vh;
+body {
+  /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
+  background-image: linear-gradient(
+    to top,
+    rgb(183, 240, 240),
+    var(--main-bg-color-blue)
+  );
+  align-items: center;
+  height: 100vh;
 }
 
-.boxes{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
+.boxes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
-.boxes button{
-    background-color: var(--main-bg-color-red);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.boxes button {
+  background-color: var(--main-bg-color-red);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.left{
-    background-color: var(--box-color);
-    height: 300px;
-    width: 300px;
-    margin: 5px 35px 5px 5px;
-    border-radius: 5px;
-    box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.left {
+  background-color: var(--box-color);
+  height: 300px;
+  width: 300px;
+  margin: 5px 35px 5px 5px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.left p{
-    font-size: xx-large;
+.left p {
+  font-size: xx-large;
 }
 
-.sign-up-button button{
-    font-size: 20px;
-    border-color: black;
-    color: white;
-    width: 150px;
-    height: 75px;
-    border-radius: 70px;
-    margin-bottom: 15px;
+.sign-up-button button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 70px;
+  margin-bottom: 15px;
 }
 
-.center{
-    background-color: var(--box-color);
-    height: 300px;
-    width: 300px;
-    margin: 5px 35px 5px 35px;
-    border-radius: 5px;
-    box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.sign-up-button button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.center p{
-    font-size: xx-large;
+.sign-up-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.login-button button{
-    font-size: 20px;
-    border-color: black;
-    color: white;
-    width: 150px;
-    height: 75px;
-    border-radius: 70px;
-    margin-bottom: 15px;
+.sign-up-button:hover span {
+  padding-right: 20px;
 }
 
-.right{
-    background-color: var(--box-color);
-    height: 300px;
-    width: 300px;
-    margin: 5px 5px 5px 35px;
-    border-radius: 5px;
-    box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.sign-up-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
-.right p{
-    font-size: xx-large;
+.center {
+  background-color: var(--box-color);
+  height: 300px;
+  width: 300px;
+  margin: 5px 35px 5px 35px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-us-button button{
-    font-size: 20px;
-    border-color: black;
-    color: white;
-    width: 150px;
-    height: 75px;
-    border-radius: 70px;
-    margin-bottom: 15px;
+.center p {
+  font-size: xx-large;
+}
+
+.login-button button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 70px;
+  margin-bottom: 15px;
+}
+
+.right {
+  background-color: var(--box-color);
+  height: 300px;
+  width: 300px;
+  margin: 5px 5px 5px 35px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right p {
+  font-size: xx-large;
+}
+
+.contact-us-button button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 70px;
+  margin-bottom: 15px;
 }

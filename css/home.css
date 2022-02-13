@@ -106,6 +106,31 @@ body {
   margin-bottom: 15px;
 }
 
+.login-button button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.login-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login-button:hover span {
+  padding-right: 20px;
+}
+
+.login-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .right {
   background-color: var(--box-color);
   height: 300px;
@@ -131,4 +156,29 @@ body {
   height: 75px;
   border-radius: 70px;
   margin-bottom: 15px;
+}
+
+.contact-us-button button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.contact-us-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.contact-us-button:hover span {
+  padding-right: 20px;
+}
+
+.contact-us-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

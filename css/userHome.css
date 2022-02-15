@@ -1,0 +1,16 @@
+:root {
+    --main-bg-color-blue: #00e0d4;
+    --main-bg-color-red: #ff3300;
+    --box-color: white;
+  }
+  
+  body {
+    /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
+    background-image: linear-gradient(
+      to top,
+      rgb(183, 240, 240),
+      var(--main-bg-color-blue)
+    );
+    align-items: center;
+    height: 100vh;
+  }

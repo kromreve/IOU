@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <title>IOU</title>
+    <script language="JavaScript" type="text/javascript">
+      function login(showhide){
+        if(showhide == "show"){
+          document.getElementById('popupbox').style.visibility="visible";
+        }else if(showhide == "hide"){
+          document.getElementById('popupbox').style.visibility="hidden"; 
+        }
+      }
+    </script>
 </head>
 <body>
+  <div id="popupbox"> 
+    <form name="login" action="" method="post">
+    <center>Username:</center>
+    <center><input name="username" size="14" /></center>
+    <center>Password:</center>
+    <center><input name="password" type="password" size="14" /></center>
+    <center><input type="submit" name="submit" value="login" /></center>
+    </form>
+    <br />
+    <center><a href="javascript:login('hide');">close</a></center> 
+  </div> 
+
     <!-- <div class="navbar"></div> -->
     <div class="boxes">
       <div class="left">
@@ -19,7 +40,7 @@
       <div class="center">
         <p>Existing User?</p>
         <div class="login-button">
-          <button><span>Login!</span></button>
+          <button><span><a href="javascript:login('show');">Login!</a></span></button>
         </div>
       </div>
       <div class="right">
@@ -29,5 +50,6 @@
         </div>
       </div>
     </div>
+    
   </body>
 </html>

@@ -4,7 +4,8 @@
   --box-color: white;
 }
 
-html, body{
+html,
+body {
   height: 100%;
 }
 
@@ -83,6 +84,172 @@ body {
   right: 0;
 }
 
+.model {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.model-content {
+  background: #f4f4f4;
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 3px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  color: #f9423d;
+  transition: 0.2s ease-out;
+}
+
+.model-content-left {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 74, 70, 1) 0%,
+    rgba(236, 43, 0, 1) 100%
+  );
+  border-radius: 0 3px 3px 0;
+  position: relative;
+}
+
+#model-img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.model-content-right {
+  border-radius: 0 3px 3px 0;
+  position: relative;
+}
+
+.model-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-form h1 {
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.form-validation {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+.form-validation.error {
+  margin-bottom: 1.5rem;
+  position: relative;
+  border: 1px solid var(#f9423d);
+  border-radius: 2px;
+}
+
+.form-validation.valid {
+  margin-bottom: 0.5rem;
+  position: relative;
+  border: 1px solid var(#0add0a);
+  border-radius: 2px;
+}
+
+.form-validation p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  color: #f9423d;
+  position: absolute;
+  top: 1.8rem;
+  display: none;
+}
+
+.form-validation.error p {
+  display: block;
+}
+
+.model-input {
+  display: block;
+  padding-left: 0.5rem;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  height: 2rem;
+  width: 100%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.model-input::placeholder {
+  color: #b1b1b1;
+}
+
+.model-input-btn {
+  width: 80%;
+  height: 4rem;
+  border-radius: 2px;
+  background-color: #f9423d;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.model-input-btn:hover {
+  cursor: pointer;
+  background-color: #337af1;
+  transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .model-content-left {
+    display: none;
+  }
+  .model-content {
+    grid-template-columns: auto;
+    margin: 15% auto;
+    width: 70%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .model-content {
+    margin: 20% auto;
+    width: 90%;
+    height: 80%;
+  }
+}
+
 .center {
   background-color: var(--box-color);
   height: 300px;
@@ -108,6 +275,7 @@ body {
   height: 75px;
   border-radius: 70px;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 
 .login-button button span {
@@ -187,26 +355,26 @@ body {
   right: 0;
 }
 
-#popupbox{
-  margin: 0; 
+#popupbox {
+  margin: 0;
   margin-left: 30%;
-  margin-top: 10%; 
-  padding-top: 10px; 
-  width: 40%; 
-  height: 50%; 
-  position: absolute; 
-  background: #FBFBF0; 
-  border: solid #000000 2px; 
-  z-index: 9; 
-  font-family: arial; 
+  margin-top: 10%;
+  padding-top: 10px;
+  width: 40%;
+  height: 50%;
+  position: relative;
+  background: #fbfbf0;
+  border: solid #000000 2px;
+  z-index: 9;
+  font-family: arial;
   visibility: hidden;
-  }
+}
 
-  #popupbox-bg{
-    height: 100vh;
-    position: absolute;
-    overflow: visible;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-  }
+#popupbox-bg {
+  height: 100vh;
+  position: absolute;
+  overflow: visible;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}

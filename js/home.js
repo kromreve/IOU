@@ -5,10 +5,12 @@
       document.getElementById('popupbox').style.visibility="hidden"; 
   }
   }*/
+
+  /*This is for the sign up button*/
     const model = document.getElementById('email-model');
     const openBtn = document.querySelector('.sign-button');
-      const closeBtn = document.querySelector('.close-btn');
-      openBtn.addEventListener('click', () => {
+    const closeBtn = document.querySelector('.close-btn');
+    openBtn.addEventListener('click', () => {
         model.style.display = 'block';
       });
       closeBtn.addEventListener("click", () => {
@@ -84,4 +86,21 @@
         checkLength(password, 8, 25);
         checkLength(passwordConfirm, 8, 25);
         passwordMatch(password, passwordConfirm);
+      });
+
+    /*This is for the login button*/
+    const modelLog = document.getElementById('login-model');
+    const openBtnLog = document.querySelector('.login-button');
+    const closeBtnLog = document.querySelector('.close-btn-log');
+    openBtnLog.addEventListener('click', () => {
+        modelLog.style.display = 'block';
+      });
+      closeBtnLog.addEventListener("click", () => {
+        modelLog.style.display = 'none';
+      });
+
+      window.addEventListener('click', (e) => {
+        if (e.target === model) {
+          modelLog.style.display = 'none';
+        }
       });

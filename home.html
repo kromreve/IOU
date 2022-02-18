@@ -105,8 +105,42 @@
         <p>Existing User?</p>
         <div class="login-button">
           <button>
-            <span><a href="javascript:login('show');">Login!</a></span>
+            <span>Login!</span>
           </button>
+        </div>
+      </div>
+      <div class="log-model" id="login-model">
+        <div class="log-model-content">
+          <span class="close-btn-log">&times;</span>
+          <div class="model-content-left-log">
+            <img id="model-img" src="pic2.svg" alt="" />
+          </div>
+          <div class="model-content-right-log">
+            <form action="/" method="GET" class="model-form-log" id="form-log">
+              <h1>We are glad to have you back. Log In below</h1>
+              <div class="form-validation-log">
+                <input
+                  type="email"
+                  class="model-input-log"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+                <p>Error Message</p>
+              </div>
+              <div class="form-validation-log">
+                <input
+                  type="password"
+                  class="model-input-log"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your passord"
+                />
+                <p>Error Message</p>
+              </div>
+              <input type="submit" class="model-input-btn-log" value="Log In" />
+            </form>
+          </div>
         </div>
       </div>
       <div class="right">

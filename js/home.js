@@ -100,7 +100,7 @@
       });
 
       window.addEventListener('click', (e) => {
-        if (e.target === model) {
+        if (e.target === modelLog) {
           modelLog.style.display = 'none';
         }
       });

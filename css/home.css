@@ -174,14 +174,14 @@ body {
 .form-validation.error {
   margin-bottom: 1.5rem;
   position: relative;
-  border: 1px solid var(#f9423d);
+  border: 1px solid #f9423d;
   border-radius: 2px;
 }
 
 .form-validation.valid {
   margin-bottom: 0.5rem;
   position: relative;
-  border: 1px solid var(#0add0a);
+  border: 1px solid #0add0a;
   border-radius: 2px;
 }
 
@@ -393,14 +393,14 @@ body {
 .form-validation-log.error {
   margin-bottom: 1.5rem;
   position: relative;
-  border: 1px solid var(#f9423d);
+  border: 1px solid #f9423d;
   border-radius: 2px;
 }
 
 .form-validation-log.valid {
   margin-bottom: 0.5rem;
   position: relative;
-  border: 1px solid var(#0add0a);
+  border: 1px solid#0add0a;
   border-radius: 2px;
 }
 

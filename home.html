@@ -7,33 +7,8 @@
     <link rel="stylesheet" href="css/home.css" />
     <title>IOU</title>
 
-    <script language="JavaScript" type="text/javascript">
-      function login(showhide) {
-        if (showhide == "show") {
-          document.getElementById("popupbox").style.visibility = "visible";
-          document.getElementById("popupbox-bg").style.visibility = "visible";
-        } else if (showhide == "hide") {
-          document.getElementById("popupbox").style.visibility = "hidden";
-          document.getElementById("popupbox-bg").style.visibility = "hidden";
-        }
-      }
-    </script>
   </head>
   <body>
-    <div id="popupbox-bg">
-      <div id="popupbox">
-        <form name="login" action="" method="post">
-          <center>Username:</center>
-          <center><input name="username" size="14" /></center>
-          <center>Password:</center>
-          <center><input name="password" type="password" size="14" /></center>
-          <center><input type="submit" name="submit" value="login" /></center>
-        </form>
-        <br />
-        <center><a href="javascript:login('hide');">close</a></center>
-      </div>
-    </div>
-
     <!-- <div class="navbar"></div> -->
     <div class="boxes">
       <div class="left">
@@ -48,7 +23,7 @@
         <div class="model-content">
           <span class="close-btn">&times;</span>
           <div class="model-content-left">
-            <img id="model-img" src="pic1.svg" alt="" />
+            <img id="model-img" src="img/pic1.svg" alt="" />
           </div>
           <div class="model-content-right">
             <form action="/" method="GET" class="model-form" id="form">
@@ -113,7 +88,7 @@
         <div class="log-model-content">
           <span class="close-btn-log">&times;</span>
           <div class="model-content-left-log">
-            <img id="model-img" src="pic2.svg" alt="" />
+            <img id="model-img" src="img/pic2.svg" alt="" />
           </div>
           <div class="model-content-right-log">
             <form action="/" method="GET" class="model-form-log" id="form-log">

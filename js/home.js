@@ -1,11 +1,3 @@
-/*function login(showhide){
-  if(showhide == "show"){
-      document.getElementById('popupbox').style.visibility="visible";
-  }else if(showhide == "hide"){
-      document.getElementById('popupbox').style.visibility="hidden"; 
-  }
-  }*/
-
   /*This is for the sign up button*/
     const model = document.getElementById('email-model');
     const openBtn = document.querySelector('.sign-button');

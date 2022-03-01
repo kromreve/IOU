@@ -40,6 +40,7 @@
             showError(input, `${getFieldName(input)} is required`);
           } else {
             showValid(input);
+            return true;
           }
         });
       }
@@ -57,28 +58,36 @@
           );
         } else {
           showValid(input);
+          return true;
         }
       }
 
       function checkPassMatch(input1, input2) {
         if (input1.value !== input2.value) {
           showError(input2, 'Passwords do not match');
+        }else{
+          location.href('userHome.html');
         }
       }
 
       function getFieldName(input) {
         return input.name.charAt(0).toUpperCase() + input.name.slice(1);
       }
+      function myFunction(){
+        window.location.href('userHome.html');
+      }
       form.addEventListener('submit', (e) => {
-        e.preventDefault(); 
-      
-        checkRequired([name, email, password, passwordConfirm]);
-        checkLength(name, 3, 50);
-        checkLength(password, 8, 25);
-        checkLength(passwordConfirm, 8, 25);
-        checkPassMatch(password, passwordConfirm);
-        
+         e.preventDefault();
+         checkRequired([name, email, password, passwordConfirm]);
+         checkLength(name, 3, 50);
+         checkLength(password, 8, 25);
+         checkLength(passwordConfirm, 8, 25);
+         checkPassMatch(password, passwordConfirm);
       });
+        
+      
+        
+      
 
     /*This is for the login button*/
     const modelLog = document.getElementById('login-model');

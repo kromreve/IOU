@@ -70,7 +70,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 
@@ -288,7 +288,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
   text-decoration: none;
 }
@@ -507,7 +507,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 

@@ -69,15 +69,15 @@
       function getFieldName(input) {
         return input.name.charAt(0).toUpperCase() + input.name.slice(1);
       }
-
       form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
+        e.preventDefault(); 
+      
         checkRequired([name, email, password, passwordConfirm]);
         checkLength(name, 3, 50);
         checkLength(password, 8, 25);
         checkLength(passwordConfirm, 8, 25);
-        passwordMatch(password, passwordConfirm);
+        checkPassMatch(password, passwordConfirm);
+        
       });
 
     /*This is for the login button*/

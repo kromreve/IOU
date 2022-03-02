@@ -11,7 +11,7 @@ body {
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(to top, rgb(44, 178, 255), white);
+  background-image: linear-gradient(to top, rgb(180, 180, 180), white);
   align-items: center;
   height: 100vh;
 }

@@ -73,9 +73,7 @@
       function getFieldName(input) {
         return input.name.charAt(0).toUpperCase() + input.name.slice(1);
       }
-      function myFunction(){
-        window.location.href('userHome.html');
-      }
+
       form.addEventListener('submit', (e) => {
          e.preventDefault();
          checkRequired([name, email, password, passwordConfirm]);
@@ -105,3 +103,11 @@
           modelLog.style.display = 'none';
         }
       });
+
+      const formLog = document.getElementById('form-log');
+
+      formLog.addEventListener('submit', (e) => {
+        e.preventDefault();
+        checkRequired([name, email, password]);
+        checkLength(password, 8, 25);
+     });

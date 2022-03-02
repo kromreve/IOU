@@ -1,6 +1,6 @@
 :root {
   --main-bg-color-blue: #00e0d4;
-  --main-bg-color-red: #ff3300;
+  --main-bg-color-red: #7CF47C;
   --box-color: white;
 }
 
@@ -11,24 +11,26 @@ body {
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
     to top,
     rgb(183, 240, 240),
     var(--main-bg-color-blue)
   );
   align-items: center;
   height: 100vh;
+  */
+  background-color: #96a8af;
 }
 
 .navbar {
-  background-color: red;
+  background-color: #7CF47C;
   color: white;
   font-size: 2em;
   font-weight: 600;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   position: fixed;
   justify-content: center;

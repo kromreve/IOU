@@ -1,6 +1,6 @@
 :root {
   --main-bg-color-blue: #00e0d4;
-  --main-bg-color-red: #ff3300;
+  --main-bg-color-red: #7cf47c;
   --box-color: white;
 }
 
@@ -12,19 +12,27 @@ body {
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
   background-image: linear-gradient(to bottom, #ffdd0e, #ffdd0e);
+  /*background-image: linear-gradient(
+    to top,
+    rgb(183, 240, 240),
+    var(--main-bg-color-blue)
+  );
   align-items: center;
   height: 100vh;
+  */
+  background-color: #96a8af;
 }
 
 .navbar {
   background-color: #1b8366;
+  background-color: #7cf47c;
   color: white;
   font-size: 2em;
   font-weight: 600;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   position: fixed;
   justify-content: center;
@@ -137,8 +145,8 @@ body {
 .model-content-left {
   background: linear-gradient(
     90deg,
-    rgba(247, 74, 70, 1) 0%,
-    rgba(236, 43, 0, 1) 100%
+    rgb(255, 239, 17) 0%,
+    rgb(255, 217, 2) 100%
   );
   border-radius: 0 3px 3px 0;
   position: relative;
@@ -356,8 +364,8 @@ body {
 .model-content-left-log {
   background: linear-gradient(
     90deg,
-    rgba(247, 74, 70, 1) 0%,
-    rgba(236, 43, 0, 1) 100%
+    rgb(255, 239, 17) 0%,
+    rgb(255, 217, 2) 100%
   );
   border-radius: 0 3px 3px 0;
   position: relative;

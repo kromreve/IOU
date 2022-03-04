@@ -11,13 +11,13 @@ body {
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(to top, rgb(180, 180, 180), white);
+  background-image: linear-gradient(to bottom, #ffdd0e, #ffdd0e);
   align-items: center;
   height: 100vh;
 }
 
 .navbar {
-  background-color: red;
+  background-color: #1b8366;
   color: white;
   font-size: 2em;
   font-weight: 600;
@@ -40,7 +40,7 @@ body {
 }
 
 .boxes button {
-  background-color: var(--main-bg-color-red);
+  background-color: #57c478;
   font-family: Impact, "Times New Roman", Times, sans-serif;
 }
 

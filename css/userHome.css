@@ -1,16 +1,23 @@
 :root {
-    --main-bg-color-blue: #00e0d4;
-    --main-bg-color-red: #ff3300;
-    --box-color: white;
-  }
-  
-  body {
-    /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-    background-image: linear-gradient(
-      to top,
-      rgb(183, 240, 240),
-      var(--main-bg-color-blue)
-    );
-    align-items: center;
-    height: 100vh;
-  }
+  --main-bg-color-blue: #00e0d4;
+  --main-bg-color-red: #ff3300;
+  --box-color: white;
+}
+
+body {
+  /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
+  background-image: linear-gradient(to top, rgb(251, 255, 5), rgb(251, 255, 5));
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar {
+  background: rgb(104, 255, 129);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}

@@ -62,8 +62,10 @@ body {
 .qna {
   cursor: pointer;
   background-color: greenyellow;
-  height: 75px;
+  height: 100px;
   width: 250px;
+  font-size: 1.4em;
+  color: black;
 }
 
 .qna:hover {

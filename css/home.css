@@ -11,7 +11,7 @@ body {
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(to bottom, #ffdd0e, #ffdd0e);
+  /*background-image: linear-gradient(to bottom, #ffdd0e, #ffdd0e);
   /*background-image: linear-gradient(
     to top,
     rgb(183, 240, 240),

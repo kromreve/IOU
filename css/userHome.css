@@ -6,18 +6,10 @@
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(to top, rgb(251, 255, 5), rgb(251, 255, 5));
+  /*background-image: linear-gradient(to top, rgb(251, 255, 5), rgb(251, 255, 5));*/
+  background-color: #96a8af;
+  background-color: ;
   align-items: center;
   height: 100vh;
 }
 
-.sidebar {
-  background: rgb(104, 255, 129);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 225px;
-  height: 100%;
-  padding: 20px 0;
-  transition: all 0.5s ease;
-}

@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -20,7 +21,18 @@ body {
   align-items: center;
   height: 100vh;
   */
+  width: 100%;
   background-color: #96a8af;
+}
+.wrapAll {
+  display: grid;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.containerP {
+  height: 50px;
 }
 
 .navbar {
@@ -38,6 +50,25 @@ body {
   justify-content: center;
   border-bottom: 3px solid black;
   margin: 0px 0px 0px 0px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.qna {
+  cursor: pointer;
+  background-color: greenyellow;
+  height: 75px;
+  width: 250px;
+}
+
+.qna:hover {
+  background-color: red;
+  transition: 0.3s ease-in-out;
 }
 
 .boxes {

@@ -1,23 +1,76 @@
 :root {
   --main-bg-color-blue: #00e0d4;
-  --main-bg-color-red: #ff3300;
+  --main-bg-color-red: #7cf47c;
   --box-color: white;
 }
 
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
   /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(to bottom, #ffdd0e, #ffdd0e);
+  /*background-image: linear-gradient(
     to top,
     rgb(183, 240, 240),
     var(--main-bg-color-blue)
   );
   align-items: center;
   height: 100vh;
+  */
+  width: 100%;
+  background-color: #96a8af;
+}
+.wrapAll {
+  display: grid;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.containerP {
+  height: 50px;
+}
+
+.navbar {
+  background-color: #1b8366;
+  background-color: #7cf47c;
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  margin: 0px 0px 0px 0px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.qna {
+  cursor: pointer;
+  background-color: greenyellow;
+  height: 100px;
+  width: 250px;
+  font-size: 1.4em;
+  color: black;
+}
+
+.qna:hover {
+  background-color: red;
+  transition: 0.3s ease-in-out;
 }
 
 .boxes {
@@ -28,8 +81,8 @@ body {
 }
 
 .boxes button {
-  background-color: var(--main-bg-color-red);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #57c478;
+  font-family: Impact, "Times New Roman", Times, sans-serif;
 }
 
 .left {
@@ -55,7 +108,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 
@@ -123,11 +176,7 @@ body {
 }
 
 .model-content-left {
-  background: linear-gradient(
-    90deg,
-    rgba(247, 74, 70, 1) 0%,
-    rgba(236, 43, 0, 1) 100%
-  );
+  background: linear-gradient(90deg, #96a8af 0%, #96a8af 100%);
   border-radius: 0 3px 3px 0;
   position: relative;
 }
@@ -273,7 +322,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
   text-decoration: none;
 }
@@ -342,11 +391,7 @@ body {
 }
 
 .model-content-left-log {
-  background: linear-gradient(
-    90deg,
-    rgba(247, 74, 70, 1) 0%,
-    rgba(236, 43, 0, 1) 100%
-  );
+  background: linear-gradient(90deg, #96a8af 0%, #96a8af 100%);
   border-radius: 0 3px 3px 0;
   position: relative;
 }
@@ -492,7 +537,7 @@ body {
   color: white;
   width: 150px;
   height: 75px;
-  border-radius: 70px;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 

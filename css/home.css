@@ -36,11 +36,10 @@ body {
 }
 
 .navbar {
-  background-color: #1b8366;
-  background-color: #7cf47c;
   color: white;
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 9em;
+  font-weight: 3000;
+  text-decoration: underline;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,7 +47,6 @@ body {
   display: flex;
   position: fixed;
   justify-content: center;
-  border-bottom: 3px solid black;
   margin: 0px 0px 0px 0px;
 }
 

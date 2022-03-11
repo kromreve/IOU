@@ -45,7 +45,8 @@ body {
 
 .boxes button {
   background-color: #57c478;
-  font-family: Impact, "Times New Roman", Times, sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
 }
 
 .left {

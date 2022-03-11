@@ -90,6 +90,8 @@ body {
 
 .sign-up-button button {
   font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
   border-color: black;
   color: white;
   width: 150px;
@@ -304,6 +306,8 @@ body {
 
 .login-button button {
   font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
   border-color: black;
   color: white;
   width: 150px;
@@ -520,6 +524,8 @@ body {
 .contact-us-button button {
   font-size: 20px;
   border-color: black;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
   color: white;
   width: 150px;
   height: 75px;

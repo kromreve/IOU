@@ -10,6 +10,7 @@ body {
   width: 100%;
   background-color: #96a8af;
 }
+
 .wrapAll {
   display: grid;
   justify-content: space-evenly;
@@ -17,16 +18,42 @@ body {
   width: 100%;
 }
 
+.return-btn {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.return {
+  left: 0;
+  background-color: #96a8af;
+  border: none;
+  font-size: 6em;
+  top: 0;
+  position: relative;
+  flex-direction: column;
+  text-decoration: underline;
+  font-size: 6em;
+  width: 13%;
+  height: 10%;
+  margin-left: 0px;
+  font-weight: 3000;
+  color: white;
+  cursor: pointer;
+}
+
+.return:hover {
+  transition: 0.3s ease-in-out;
+  color: #57c478;
+}
 .navbarContact {
   color: white;
   font-size: 6em;
   font-weight: 3000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  position: fixed;
+  width: 80%;
+  padding-left: 130px;
+  position: relative;
   justify-content: center;
   margin: 0px 0px 0px 0px;
 }

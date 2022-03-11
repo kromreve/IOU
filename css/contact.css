@@ -1,0 +1,204 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  background-color: #96a8af;
+}
+.wrapAll {
+  display: grid;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.navbarContact {
+  color: white;
+  font-size: 6em;
+  font-weight: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+}
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+}
+.boxes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.boxes button {
+  background-color: #57c478;
+  font-family: Impact, "Times New Roman", Times, sans-serif;
+}
+
+.left {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  margin: 5px 35px 5px 5px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.left p {
+  font-size: xx-large;
+}
+
+.left-btn button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.left-btn button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.left-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.left-btn:hover span {
+  padding-right: 20px;
+}
+
+.left-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.center {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  margin: 5px 35px 5px 35px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.center p {
+  font-size: xx-large;
+}
+
+.center-btn button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.center-btn button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.center-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.center-btn:hover span {
+  padding-right: 20px;
+}
+
+.center-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.right {
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  margin: 5px 35px 5px 35px;
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right p {
+  font-size: xx-large;
+}
+
+.right-btn button {
+  font-size: 20px;
+  border-color: black;
+  color: white;
+  width: 150px;
+  height: 75px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.right-btn button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.right-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.right-btn:hover span {
+  padding-right: 20px;
+}
+
+.right-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

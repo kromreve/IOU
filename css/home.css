@@ -41,11 +41,11 @@ body {
   color: white;
   font-size: 9em;
   font-weight: 3000;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 0;
   display: flex;
   position: fixed;
   justify-content: center;

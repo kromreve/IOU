@@ -1,3 +1,4 @@
+/*
 :root {
   --main-bg-color-blue: #00e0d4;
   --main-bg-color-red: #ff3300;
@@ -5,11 +6,215 @@
 }
 
 body {
-  /* background-color: var(--main-bg-color-blue); rgb(0, 140, 255)*/
-  /*background-image: linear-gradient(to top, rgb(251, 255, 5), rgb(251, 255, 5));*/
+  background-color: var(--main-bg-color-blue); rgb(0, 140, 255)
+  background-image: linear-gradient(to top, rgb(251, 255, 5), rgb(251, 255, 5));
   background-color: #96a8af;
-  background-color: ;
-  align-items: center;
   height: 100vh;
+  display: inline-flex;
 }
 
+#dashboard{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#dashboard div{
+  padding: 5px 15px 5px 15px;
+  margin: 5px 15px 5px 15px;
+  background-color: white;
+}
+
+*/
+
+:root {
+  --bg-color: #e5e5e5;
+  --bcn-orange: #57c478;
+  --bcn-orange-light: #57c478;
+  --bcn-orange-dark: #57c478;
+  --black: #333;
+  --white: #f5f5f5;
+  --text-color: #555;
+  --border-color: rgb(238, 238, 238);
+  --border-style: 1px solid var(--border-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.user {
+  --spacing: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "header header" "nav    main" "footer footer";
+}
+.user__header {
+  display: flex;
+  flex-basis: 100%;
+  grid-area: header;
+  height: 80px;
+  background-color: #313541;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.user__nav {
+  height: 100%;
+  flex: 0 0 300px;
+  grid-area: nav;
+  background-color: #313541;
+}
+
+.dashboard {
+  background-color: #96a8af;
+  --column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-gap: var(--spacing);
+}
+.dashboard__item {
+  flex: 1 1 50%;
+  grid-column-end: span 2;
+  padding: calc(var(--spacing) / 2);
+}
+.dashboard__item--full {
+  flex-basis: 100%;
+  grid-column: 1/-1;
+}
+.dashboard__item--col {
+  flex-basis: calc(100% / var(--column-count));
+  grid-column-end: span 1;
+}
+@media screen and (min-width: 48rem) {
+  .dashboard {
+    --column-count: 4;
+  }
+}
+@supports (display: grid) {
+  .dashboard {
+    margin: 0;
+  }
+  .dashboard__item {
+    padding: 0;
+  }
+}
+
+a {
+  color: #dc5a60;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex: 0 0 300px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  color: #fff;
+  background-color: var(--bcn-orange);
+  font-size: 1rem;
+}
+.logo h1 {
+  margin: 0;
+}
+
+.logo h1:hover{
+  color: #313541;
+}
+
+.toolbar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 0 var(--spacing);
+  justify-content: space-between;
+}
+
+.toolbar p{
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+.menu__title {
+  display: block;
+  padding: 2rem 2rem 0.5rem;
+  color: #76808f;
+  font-weight: 700;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px 30px;
+  color: #76808f;
+  text-decoration: none;
+}
+.menu__link.is-active {
+  color: #fff;
+  background-color: var(--bcn-orange-dark);
+  border-left: 3px solid var(--bcn-orange);
+}
+.menu__link:hover, .menu__link:focus {
+  color: white;
+  background-color: var(--bcn-orange-light);
+}
+
+.card {
+  border-radius: 5px;
+  height: 100%;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card__header {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e6eaee;
+  font-weight: 700;
+}
+.card__item {
+  padding: 20px 30px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5em;
+  border: 0;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+.btn--primary {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  background-color: #56bf89;
+}
+
+.btn--primary:hover{
+  color: #313541;
+}

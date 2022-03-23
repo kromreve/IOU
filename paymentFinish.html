@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/makePayment.css" />
+    <link rel="stylesheet" href="css/paymentFinish.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300"
@@ -66,50 +66,37 @@
       <div class="dashboard">
         <div class="dashboard__item">
           <div class="card">
-            <div class="card__header">Make a Payment!</div>
+            <div class="card__header">Choose who you want to pay!</div>
             <div class="card__content">
               <div class="card__item">
                 <div class="title">Payment</div>
                 <div class="inputPage">
                   <div class="firstPage">
                     <div class="item">
-                      <label class="label">card number</label>
+                      <label class="label">search</label>
                       <input
                         type="text"
                         class="input"
-                        placeholder="XXXX XXXX XXXX XXXX"
+                        placeholder="Ex. @JohnSmith"
                       />
-                    </div>
-                    <div class="item2">
-                      <label class="label">card holder</label>
-                      <input
-                        type="text"
-                        class="input"
-                        placeholder="Ex. John Smith"
-                      />
+                      <button class="search">Search</button>
                     </div>
                   </div>
                   <div class="secondPage">
-                    <div class="item">
-                      <label class="label">expire date</label>
-                      <input type="text" class="input" placeholder="MM / YY" />
-                    </div>
                     <div class="item2">
-                      <div class="cvc">
-                        <label class="label">cvc code</label>
-                      </div>
-                      <input type="text" class="input" placeholder="XXX" />
+                      <label class="label2"
+                        >How much do you want to pay [USER]</label
+                      >
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="$1,000,000.00"
+                      />
                     </div>
                   </div>
-
-                  <div class="item2">
-                    <div class="pay_button">
-                      <button
-                        class="payment_submit"
-                        onclick="window.location.href='paymentFinish.html'"
-                      >
-                        Submit
-                      </button>
+                  <div class="thirdPage">
+                    <div class="item3">
+                      <button class="finish_pay_btn">Finish Payment</button>
                     </div>
                   </div>
                 </div>

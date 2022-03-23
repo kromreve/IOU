@@ -31,10 +31,61 @@
 .card__header {
   padding: 20px 30px;
   border-bottom: 1px solid #e6eaee;
+  font-size: 2em;
   font-weight: 700;
   color: #313541;
   font-family: "Work Sans", sans-serif;
 }
 .card__item {
   padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.nameText {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.inputUser {
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  position: relative;
+}
+.searchUser {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  font-size: 1.5em;
+}
+
+.usernameButton {
+  margin: 8px 0px;
+  padding: 12px 20px;
+  width: 80%;
+  background-color: rgb(112, 255, 112);
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px rgb(59, 59, 59);
+}
+
+.usernameButton:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.usernameButton:active {
+  background-color: rgb(112, 255, 112);
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }

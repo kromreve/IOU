@@ -154,12 +154,7 @@ input[type="text"] {
   box-shadow: 0 3px #666;
   transform: translateY(4px);
 }
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
+
 .paymentAmountItem {
   padding: 20px 30px;
   display: flex;

@@ -118,7 +118,14 @@
 
                   <div class="item2">
                     <div class="pay_button">
-                      <button class="payment_submit" id="edit-btn">Edit</button>
+                      <!--<button class="payment_submit" id="edit-btn">Edit</button>-->
+                      <input
+                        class="payment_submit"
+                        onclick="change()"
+                        type="button"
+                        value="Edit"
+                        id="edit-btn"
+                      />
                     </div>
                   </div>
                 </div>
@@ -128,36 +135,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document.getElementById("edit-btn").onclick = function () {
-        if (document.getElementById("inp").hasAttribute("readonly") === false) {
-          document.getElementById("inp").setAttribute("readonly", true);
-        } else {
-          document.getElementById("inp").removeAttribute("readonly");
-        }
-        if (
-          document.getElementById("inp2").hasAttribute("readonly") === false
-        ) {
-          document.getElementById("inp2").setAttribute("readonly", true);
-        } else {
-          document.getElementById("inp2").removeAttribute("readonly");
-        }
-        if (
-          document.getElementById("inp3").hasAttribute("readonly") === false
-        ) {
-          document.getElementById("inp3").setAttribute("readonly", true);
-        } else {
-          document.getElementById("inp3").removeAttribute("readonly");
-        }
-        if (
-          document.getElementById("inp4").hasAttribute("readonly") === false
-        ) {
-          document.getElementById("inp4").setAttribute("readonly", true);
-        } else {
-          document.getElementById("inp4").removeAttribute("readonly");
-        }
-        //document.getElementById("inp").removeAttribute("readonly");
-      };
-    </script>
+    <script src="js/account.js"></script>
   </body>
 </html>

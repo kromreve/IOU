@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/accountHome.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300"
+      rel="stylesheet"
+    />
+    <title>IOU</title>
+  </head>
+  <body>
+    <div class="user">
+      <header class="user__header">
+        <a href="userHome.html" class="logo">
+          <h1>IOU</h1>
+        </a>
+        <div class="toolbar">
+          <div>
+            <p>Welcome Back, [USERNAME]</p>
+          </div>
+          <div class="toolbar__right">
+            <a href="home.html" class="btn btn--primary logout">Log Out</a>
+          </div>
+        </div>
+      </header>
+      <nav class="user__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="makePayment.html">Make Payment</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="requestPayment.html">Request Payment</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="depositFunds.html">Deposit Funds</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="withdrawFunds.html">Withdraw Funds</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="transactionHistory.html"
+              >Transaction History</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link is-active" href="accountHome.html">Account</a>
+          </li>
+          <li class="menu__title">Help</li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Leave Review</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Report A Bug</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="dashboard">
+        <div class="dashboard__item">
+          <div class="card">
+            <div class="card__header">Account</div>
+            <div class="card__content">
+              <div class="card__item">
+                <div class="title">Account Details</div>
+                <div class="inputPage">
+                  <div class="firstPage">
+                    <div class="item">
+                      <label class="label">name</label>
+                      <input
+                        type="text"
+                        class="input"
+                        id="inp"
+                        placeholder="John Smith"
+                        readonly="readonly"
+                      />
+                    </div>
+                    <div class="item2">
+                      <label class="label">username</label>
+                      <input
+                        type="text"
+                        class="input"
+                        id="inp2"
+                        placeholder="@JohnSmith"
+                        readonly="readonly"
+                      />
+                    </div>
+                  </div>
+                  <div class="secondPage">
+                    <div class="item">
+                      <label class="label">password</label>
+                      <input
+                        type="text"
+                        id="inp3"
+                        class="input"
+                        placeholder="JoHnSmItH"
+                        readonly="readonly"
+                      />
+                    </div>
+                    <div class="item2">
+                      <div class="cvc">
+                        <label class="label">phone number</label>
+                      </div>
+                      <input
+                        type="text"
+                        class="input"
+                        id="inp4"
+                        placeholder="651-555-2123"
+                        readonly="false"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="item2">
+                    <div class="pay_button">
+                      <!--<button class="payment_submit" id="edit-btn">Edit</button>-->
+                      <input
+                        class="payment_submit"
+                        onclick="change()"
+                        type="button"
+                        value="Edit"
+                        id="edit-btn"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/account.js"></script>
+  </body>
 </html>

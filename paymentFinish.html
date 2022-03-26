@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/requestPayment.css" />
+    <link rel="stylesheet" href="css/paymentFinish.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300"
@@ -30,12 +30,12 @@
       <nav class="user__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__link" href="makePayment.html">Make Payment</a>
+            <a class="menu__link is-active" href="makePayment.html"
+              >Make Payment</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link is-active" href="requestPayment.html"
-              >Request Payment</a
-            >
+            <a class="menu__link" href="requestPayment.html">Request Payment</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="depositFunds.html">Deposit Funds</a>
@@ -66,10 +66,10 @@
       <div class="dashboard">
         <div class="dashboard__item">
           <div class="card">
-            <div class="card__header">Request Payment From Another User</div>
+            <div class="card__header">Choose who you want to pay!</div>
             <div class="card__content">
               <div class="card__item">
-                <div class="title">Request</div>
+                <div class="title">Payment</div>
                 <div class="inputPage">
                   <div class="firstPage">
                     <div class="item">
@@ -85,7 +85,7 @@
                   <div class="secondPage">
                     <div class="item2">
                       <label class="label2"
-                        >How much do you want to request from [USER]</label
+                        >How much do you want to pay [USER]</label
                       >
                       <input
                         type="text"
@@ -96,21 +96,26 @@
                   </div>
                   <div class="fourthPage">
                     <div class="item4">
-                      <h2>Request Message Box</h2>
-                      <input type="text" class="hide" id="textInput" />
+                    
+                      <h2>Message box below if you want to say anything</h2>
+                      <input type="text" class="hide" id="textInput">
                     </div>
                   </div>
+                  
+                </div>
                   <div class="thirdPage">
                     <div class="item3">
-                      <button class="finish_pay_btn">Send Request</button>
+                      <button class="finish_pay_btn">Finish Payment</button>
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="makePayment.js"></script>
   </body>
 </html>

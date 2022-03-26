@@ -1,0 +1,164 @@
+.dashboard {
+  background-color: #96a8af;
+  --column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), 1fr);
+  grid-gap: var(--spacing);
+}
+
+.dashboard__item {
+  flex: 1 1 50%;
+  grid-column-end: span 2;
+  padding: calc(var(--spacing) / 2);
+}
+
+.dashboard__item--full {
+  flex-basis: 100%;
+  grid-column: 1/-1;
+}
+
+.card {
+  border-radius: 5px;
+  height: 100%;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card__header {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e6eaee;
+  font-size: 2em;
+  font-weight: 700;
+  color: #313541;
+  font-family: "Work Sans", sans-serif;
+}
+.card__item {
+  padding: 20px 30px;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  height: auto;
+  margin: 50px auto;
+}
+
+.title {
+  color: #313541;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.inputPage,
+.inputPage .item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.firstPage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondPage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.payment_submit {
+  background-color: rgb(58, 58, 58);
+  width: 30%;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  padding: 12px 20px;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.payment_submit:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 82, 14, 0.4);
+  color: #fff;
+  background-color: rgb(69, 197, 69);
+}
+
+.inputPage .label {
+  display: block;
+  font-size: 1em;
+  color: #212121;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.inputPage .input {
+  place-items: center;
+  font-size: 1em;
+}
+
+.nameText {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.inputUser {
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  position: relative;
+}
+.searchUser {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  font-size: 1.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.usernameButton {
+  margin: 8px 0px;
+  padding: 12px 20px;
+  width: 80%;
+  background-color: rgb(112, 255, 112);
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px rgb(59, 59, 59);
+  font-family: "Work Sans", sans-serif;
+}
+
+.usernameButton:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.usernameButton:active {
+  background-color: rgb(112, 255, 112);
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.paymentAmountItem {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 80px;
+}

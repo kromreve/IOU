@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/depositFunds.css" />
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>IOU</title>
+  </head>
+  <body>
+    <div class="user">
+      <header class="user__header">
+        <a href="userHome.html" class="logo">
+          <h1>IOU</h1>
+        </a>
+        <div class="toolbar">
+          <div>
+            <p>Welcome Back, [USERNAME]</p>
+          </div>
+          <div class="toolbar__right">
+            <a href="home.html" class="btn btn--primary logout">Log Out</a>
+          </div>
+        </div>
+      </header>
+      <nav class="user__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="makePayment.html">Make Payment</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="requestPayment.html">Request Payment</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link is-active" href="depositFunds.html">Deposit Funds</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="withdrawFunds.html">Withdraw Funds</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="transactionHistory.html"
+              >Transaction History</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="accountHome.html">Account</a>
+          </li>
+          <li class="menu__title">Help</li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Leave Review</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Report A Bug</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactPage.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="dashboard">
+        <div class="dashboard__item">
+          <div class="card">
+            <div class="card__header">Deposit Funds From Your IOU Account Directly Into Your Bank Account!</div>
+            <div class="card__content">
+              <div class="card__item"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -31,4 +31,18 @@ rep_openBtn.addEventListener('click', () => {
     }
   });
 
+  const con_model = document.getElementById('con-model');
+  const con_openBtn = document.querySelector('.contact');
+  const con_closeBtn = document.querySelector('.con-close-btn');
+  con_openBtn.addEventListener('click', () => {
+      con_model.style.display = 'block';
+    });
+    con_closeBtn.addEventListener("click", () => {
+      con_model.style.display = 'none';
+    });
   
+    window.addEventListener('click', (e) => {
+      if (e.target === con_model) {
+        con_model.style.display = 'none';
+      }
+    });  

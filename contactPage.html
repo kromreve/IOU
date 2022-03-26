@@ -24,13 +24,73 @@
         <div class="left">
           <p>Leave Review</p>
           <div class="left-btn">
-            <button class="review"><span>Review</span></button>
+            <button class="review" id="review-btn"><span>Review</span></button>
           </div>
         </div>
+        <div class="model" id="email-model">
+          <div class="model-content">
+            <span class="close-btn">&times;</span>
+            <div class="model-content-left">
+              <img id="model-img" src="img/pic4.svg" alt="" />
+            </div>
+            <div class="model-content-right">
+              <form action="/" method="GET" class="model-form" id="form">
+                <h1>Please leave a review below, we really appreciate it!</h1>
+                <div class="form-validation">
+                  <textarea
+                    name="name"
+                    id="name"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="model-input-btn" value="Sign Up">
+                  Leave Review
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <div class="center">
           <p>Report and Error</p>
           <div class="center-btn">
-            <button class="review"><span>Report</span></button>
+            <button class="report"><span>Report</span></button>
+          </div>
+        </div>
+        <div class="rep-model" id="rep-model">
+          <div class="rep-model-content">
+            <span class="rep-close-btn">&times;</span>
+            <div class="rep-model-content-left">
+              <img id="model-img" src="img/pic5.svg" alt="" />
+            </div>
+            <div class="rep-model-content-right">
+              <form
+                action="/"
+                method="GET"
+                class="rep-model-form"
+                id="rep-form"
+              >
+                <h1>Found an Error? Let us know below.</h1>
+                <div class="rep-form-validation">
+                  <textarea
+                    name="name"
+                    id="name"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="rep-model-input-btn"
+                  value="Report Error"
+                >
+                  Report Error
+                </button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="right">
@@ -41,5 +101,6 @@
         </div>
       </div>
     </div>
+    <script src="js/contact.js"></script>
   </body>
 </html>

@@ -8,11 +8,18 @@
   grid-template-columns: repeat(var(--column-count), 1fr);
   grid-gap: var(--spacing);
 }
+
 .dashboard__item {
   flex: 1 1 50%;
   grid-column-end: span 2;
   padding: calc(var(--spacing) / 2);
 }
+
+.card:hover{
+  color: white;
+  background-color: rgb(69, 197, 69);
+}
+
 .dashboard__item--full {
   flex-basis: 100%;
   grid-column: 1/-1;
@@ -44,10 +51,14 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .card__header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2em;
   padding: 20px 30px;
   border-bottom: 1px solid #e6eaee;
   font-weight: 700;
 }
 .card__item {
   padding: 20px 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/withdrawFunds.css" />
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/depositFunds.css">
     <title>IOU</title>
   </head>
   <body>
@@ -60,13 +61,57 @@
       <div class="dashboard">
         <div class="dashboard__item">
           <div class="card">
-            <div class="card__header">Withdraw Funds from your bank account into your IOU account!</div>
+            <div class="card__header">Withdraw funds from your bank account into your IOU account!</div>
             <div class="card__content">
-              <div class="card__item"></div>
+              <div class="card__item">
+                <div class="inputPage">
+                  <div class="firstPage">
+                    <div class="item3">
+                      <label class="label">Bank Account</label>
+                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Select Account</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                          <a href="#about">Savings</a>
+                          <a href="#base">Checking</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item2">
+                      <label class="label">Amount</label>
+                      <input
+                        type="text"
+                        class="input"
+                        id="inp2"
+                        placeholder="0.00"
+                      />
+                    </div>
+                    <div class="item">
+                      <label class="label">IOU Balance</label>
+                      <input
+                        type="text"
+                        class="input"
+                        id="inp"
+                        placeholder="$10,000"
+                      />
+                    </div>
+                  </div>
+                  <div class="item2">
+                    <div class="pay_button">
+                      <input
+                        class="payment_submit"
+                        type="button"
+                        value="Withdraw"
+                      />
+                    </div>
+                  </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="js/deposit.js"></script>
   </body>
 </html>

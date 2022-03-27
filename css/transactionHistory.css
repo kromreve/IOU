@@ -29,12 +29,34 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .card__header {
+  font-size: 2em;
   padding: 20px 30px;
   border-bottom: 1px solid #e6eaee;
-  font-weight: 700;
   color: #313541;
   font-family: "Work Sans", sans-serif;
 }
 .card__item {
   padding: 20px 30px;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+  text-align: left;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 0 10px 14px;
+}
+
+td{
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 300;
+  padding: 0 10px;
 }

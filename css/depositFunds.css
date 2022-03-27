@@ -23,7 +23,6 @@
 .card {
   border-radius: 5px;
   height: 100%;
-  font-weight: 300;
   background-color: #fff;
   border: 1px solid #e6eaee;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -31,10 +30,160 @@
 .card__header {
   padding: 20px 30px;
   border-bottom: 1px solid #e6eaee;
-  font-weight: 700;
+  font-size: 2em;
   color: #313541;
   font-family: "Work Sans", sans-serif;
 }
 .card__item {
   padding: 20px 30px;
 }
+
+.label{
+  font-family: "Work Sans", sans-serif;
+}
+
+.inputPage,
+.inputPage .item {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.firstPage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondPage {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.payment_submit {
+  background-color: rgb(58, 58, 58);
+  width: 30%;
+  font-size: 1.2em;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  padding: 12px 20px;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.payment_submit:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 82, 14, 0.4);
+  color: #fff;
+  background-color: rgb(69, 197, 69);
+}
+
+.inputPage .label {
+  display: block;
+  font-size: 1em;
+  color: #212121;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.inputPage .input {
+  place-items: center;
+  font-size: 1em;
+}
+
+.nameText {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.inputUser {
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  position: relative;
+}
+.searchUser {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  font-size: 1.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  border-radius: 20px;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(0, 82, 14, 0.4);
+  color: #fff;
+  background-color: rgb(69, 197, 69);
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

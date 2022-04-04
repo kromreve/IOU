@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/makePayment.css" />
+    <link rel="stylesheet" href="css/transactionHistory.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300"
@@ -30,9 +30,7 @@
       <nav class="user__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__link is-active" href="makePayment.html"
-              >Make Payment</a
-            >
+            <a class="menu__link" href="makePayment.html">Make Payment</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="requestPayment.html">Request Payment</a>
@@ -52,7 +50,9 @@
             <a class="menu__link" href="accountHome.html">Account</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="notifications.html">Notifications</a>
+            <a class="menu__link is-active" href="notifications.html"
+              >Notifications</a
+            >
           </li>
           <li class="menu__title">Help</li>
           <li class="menu__item">
@@ -67,55 +67,31 @@
         </ul>
       </nav>
       <div class="dashboard">
-        <div class="dashboard__item">
+        <div class="dashboard__item dashboard__item--full">
           <div class="card">
-            <div class="card__header">Make a Payment!</div>
+            <div class="card__header">Notifications</div>
             <div class="card__content">
               <div class="card__item">
-                <div class="title">Payment</div>
-                <div class="inputPage">
-                  <div class="firstPage">
-                    <div class="item">
-                      <label class="label">card number</label>
-                      <input
-                        type="text"
-                        class="input"
-                        placeholder="XXXX XXXX XXXX XXXX"
-                      />
-                    </div>
-                    <div class="item2">
-                      <label class="label">card holder</label>
-                      <input
-                        type="text"
-                        class="input"
-                        placeholder="Ex. John Smith"
-                      />
-                    </div>
-                  </div>
-                  <div class="secondPage">
-                    <div class="item">
-                      <label class="label">expire date</label>
-                      <input type="text" class="input" placeholder="MM / YY" />
-                    </div>
-                    <div class="item2">
-                      <div class="cvc">
-                        <label class="label">cvc code</label>
-                      </div>
-                      <input type="text" class="input" placeholder="XXX" />
-                    </div>
-                  </div>
-
-                  <div class="item2">
-                    <div class="pay_button">
-                      <button
-                        class="payment_submit"
-                        onclick="window.location.href='paymentFinish.html'"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <table>
+                  <tr>
+                    <th>Date</th>
+                    <th>To/From</th>
+                    <th>Request/Send</th>
+                    <th>Amount</th>
+                  </tr>
+                  <tr>
+                    <td>03/18/2022</td>
+                    <td>Jean Paul</td>
+                    <td>Request</td>
+                    <td>$15</td>
+                  </tr>
+                  <tr>
+                    <td>11/24/21</td>
+                    <td>Dr Dave</td>
+                    <td>Send</td>
+                    <td>$1</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>

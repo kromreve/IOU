@@ -40,24 +40,32 @@
   padding: 20px 30px;
 }
 
-table{
+table {
   border-collapse: collapse;
   width: 100%;
 }
 
-th{
+th {
   text-align: left;
   font-weight: 500;
   font-family: "Work Sans", sans-serif;
   font-size: 25px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 10px 14px;
 }
 
-td{
+td {
   font-family: "Work Sans", sans-serif;
   font-size: 20px;
   line-height: 40px;
   font-weight: 300;
   padding: 0 10px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: rgb(0, 228, 0);
 }

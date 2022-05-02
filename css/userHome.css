@@ -15,7 +15,33 @@
   padding: calc(var(--spacing) / 2);
 }
 
-.card:hover{
+.dashboard__item-last {
+  flex: 1 1 50%;
+  width: 110%;
+  margin-left: 47%;
+  grid-column-end: span 2;
+  padding: calc(var(--spacing) / 2);
+  align-items: center;
+  justify-content: center;
+}
+
+.card-last {
+  border-radius: 5px;
+  height: 100%;
+  font-weight: 300;
+  text-align: center;
+
+  background-color: #fff;
+  border: 1px solid #e6eaee;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-last:hover {
+  color: white;
+  background-color: rgb(69, 197, 69);
+}
+
+.card:hover {
   color: white;
   background-color: rgb(69, 197, 69);
 }
@@ -46,6 +72,7 @@
   border-radius: 5px;
   height: 100%;
   font-weight: 300;
+  text-align: center;
   background-color: #fff;
   border: 1px solid #e6eaee;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -55,7 +82,7 @@
   font-size: 2em;
   padding: 20px 30px;
   border-bottom: 1px solid #e6eaee;
-  font-weight: 700;
+  font-weight: 900;
 }
 .card__item {
   padding: 20px 30px;

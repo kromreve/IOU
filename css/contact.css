@@ -20,9 +20,12 @@ body {
 
 .return-btn {
   width: 100%;
+  padding-top: 30px;
   position: absolute;
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 .return {
@@ -51,8 +54,7 @@ body {
   color: white;
   font-size: 6em;
   font-weight: 3000;
-  width: 80%;
-  padding-left: 130px;
+  width: 100%;
   position: relative;
   justify-content: center;
   margin: 0px 0px 0px 0px;
@@ -372,7 +374,7 @@ textarea {
   position: absolute;
   top: 2%;
   right: 3%;
-  font-size: 1.5rem;
+  font-size: 4rem;
   z-index: 1;
 }
 

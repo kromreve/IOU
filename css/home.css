@@ -455,11 +455,13 @@ body {
 .model-input-log {
   display: block;
   padding-left: 0.5rem;
+  padding: 10px;
   outline: none;
   border-radius: 2px;
   border: none;
   height: 2rem;
   width: 100%;
+  font-size: 1.1em;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 

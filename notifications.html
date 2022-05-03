@@ -84,29 +84,63 @@
                     <td>03/18/2022</td>
                     <td>@JeanPaul</td>
                     <td>Requests</td>
-                    <td>$15</td>
-                    <td><button class="notif-btn">Pay</button></td>
+                    <td class="red">- $15</td>
+                    <td>
+                      <button id="pay1" class="notif-btn">Pay</button>
+                    </td>
                   </tr>
                   <tr>
                     <td>03/20/21</td>
                     <td>@DrDave</td>
                     <td>Sends</td>
-                    <td>$1</td>
-                    <td><button class="notif-btn">Accept</button></td>
+                    <td class="green">+ $1</td>
+                    <td>
+                      <button id="accept1" class="notif-btn-accept">
+                        Accept
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>03/22/2022</td>
                     <td>@BrendanPelto</td>
                     <td>Requests</td>
-                    <td>$50</td>
-                    <td><button class="notif-btn">Pay</button></td>
+                    <td class="red">- $50</td>
+                    <td>
+                      <button id="pay2" class="notif-btn">Pay</button>
+                    </td>
                   </tr>
                   <tr>
                     <td>11/24/22</td>
                     <td>@JohnMadden</td>
                     <td>Sends</td>
-                    <td>$100</td>
-                    <td><button class="notif-btn">Accept</button></td>
+                    <td class="green">+ $100</td>
+                    <td>
+                      <button id="accept2" class="notif-btn-accept">
+                        Accept
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card__item__lower">
+                <table class="table_lower">
+                  <tr>
+                    <th>Total Amount Owed</th>
+                  </tr>
+                  <tr>
+                    <td class="red">$65</td>
+                    <td><button class="notif-btn-lower">Pay All</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card__item__lower">
+                <table class="table_lower">
+                  <tr>
+                    <th>Total Amount Recieved</th>
+                  </tr>
+                  <tr>
+                    <td class="green">$101</td>
+                    <td><button class="notif-btn-lower">Accept All</button></td>
                   </tr>
                 </table>
               </div>
@@ -115,5 +149,6 @@
         </div>
       </div>
     </div>
+    <script src="js/notifications.js"></script>
   </body>
 </html>

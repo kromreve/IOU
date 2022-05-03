@@ -91,6 +91,10 @@
   background-color: rgb(69, 197, 69);
 }
 
+.lowerFirst {
+  padding-top: 20px;
+}
+
 .inputPage .label {
   display: block;
   font-size: 1em;

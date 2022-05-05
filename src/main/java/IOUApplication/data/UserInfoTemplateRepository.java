@@ -20,4 +20,8 @@ public class UserInfoTemplateRepository {
         return jdbcTemplate.query(sql, new UserInfoMapper(), userID).stream()
                 .findFirst().orElse(null);
     }
+
+    public UserInfo signUp(UserInfo userInfo){
+        String sql = "";
+    }
 }

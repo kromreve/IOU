@@ -19,11 +19,20 @@ public class UserInfoController {
     }
 
     @PostMapping
-    public ResponseEntity<UserInfo> add(@RequestBody UserInfo newUserInfo){
-        UserInfo userInfo = UserInfoService.save(newUserInfo);
+    public ResponseEntity<UserInfo> signUp(@RequestBody UserInfo newUserInfo){
+        UserInfo userInfo = userInfoService.signUp(newUserInfo);
         if(userInfo != null){
             return new ResponseEntity<>(userInfo, HttpStatus.CREATED);
         }
-        return new ResponseEntity<>(userInfo, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<Boolean> login(@RequestBody UserInfo userInfo){
+        Boolean authed = userInfoService.login(userInfo);
+        if(authed){
+            return new ResponseEntity<>(authed, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(authed, HttpStatus.FORBIDDEN);
     }
 }

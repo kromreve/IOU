@@ -13,15 +13,16 @@ public class UserInfoService {
         this.userInfoTemplateRepository = userInfoTemplateRepository;
     }
 
-    public static UserInfo save(UserInfo userInfo){
-        return new UserInfo(userInfo.getUserID(),
-                userInfo.getPassword(),
-                userInfo.getName(),
-                userInfo.getEmail(),
-                userInfo.getPhoneNumber(),
-                userInfo.getBankAcctNumber(),
-                userInfo.getBankAcctName(),
-                userInfo.getAcctBalance()
-                );
+    public UserInfo signUp(UserInfo userInfo){
+       return userInfoTemplateRepository.signUp(userInfo);
+    }
+
+    public Boolean login(UserInfo userInfo){
+        UserInfo foundUser = userInfoTemplateRepository.findByName(userInfo.getEmail());
+
+        if(foundUser == null) return false;
+        if(foundUser.getPassword().equals(userInfo.getPassword())) return true;
+
+        return false;
     }
 }

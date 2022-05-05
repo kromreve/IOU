@@ -4,16 +4,18 @@ public class UserInfo {
 
     private int userID;
     private String password;
+    private String name;
     private String email;
     private String phoneNumber;
     private String bankAcctNumber;
     private String bankAcctName;
     private double acctBalance;
 
-    public UserInfo(int userID, String password, String email, String phoneNumber, String bankAcctNumber,
+    public UserInfo(int userID, String password, String name, String email, String phoneNumber, String bankAcctNumber,
                     String bankAcctName, double acctBalance){
         this.userID = userID;
         this.password = password;
+        this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.bankAcctNumber = bankAcctNumber;
@@ -37,6 +39,12 @@ public class UserInfo {
         this.password = password;
     }
 
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
     public String getEmail() {
         return email;
     }
@@ -44,7 +52,6 @@ public class UserInfo {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }

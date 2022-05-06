@@ -53,7 +53,17 @@ public class UserInfoTemplateRepository {
         if(rowsAffected <= 0){
             return null;
         }
-         userInfo.setUserID(keyHolder.getKey().intValue());
+        userInfo.setUserID(keyHolder.getKey().intValue());
         return userInfo;
+    }
+
+    public Boolean updateAccount(UserInfo userInfo){
+        String sql = "update UserInfo set `name` = ?, `password` = ?, `phoneNumber` = ? where `id` = ?;";
+
+        return jdbcTemplate.update(sql,
+                userInfo.getName(),
+                userInfo.getPassword(),
+                userInfo.getPhoneNumber(),
+                userInfo.getUserID()) > 0;
     }
 }

@@ -18,7 +18,7 @@ public class UserInfoController {
         this.userInfoService = userInfoService;
     }
 
-    @PostMapping
+    @PostMapping("/signUp")
     public ResponseEntity<UserInfo> signUp(@RequestBody UserInfo newUserInfo){
         UserInfo userInfo = userInfoService.signUp(newUserInfo);
         if(userInfo != null){
@@ -34,5 +34,17 @@ public class UserInfoController {
             return new ResponseEntity<>(authed, HttpStatus.OK);
         }
         return new ResponseEntity<>(authed, HttpStatus.FORBIDDEN);
+    }
+
+    @PutMapping("/updateAccount")
+    public ResponseEntity<Boolean> updateAccount(@RequestBody UserInfo additionalUserInfo){
+        Boolean userInfo = userInfoService.updateAccount(additionalUserInfo);
+
+        if(userInfo){
+            return new ResponseEntity<>(userInfo, HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+
     }
 }

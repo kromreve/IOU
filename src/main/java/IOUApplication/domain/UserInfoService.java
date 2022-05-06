@@ -25,4 +25,8 @@ public class UserInfoService {
 
         return false;
     }
+
+    public Boolean updateAccount(UserInfo userInfo){
+        return userInfoTemplateRepository.updateAccount(userInfo);
+    }
 }

@@ -1,6 +1,5 @@
 package IOUApplication.controllers;
 
-
 import IOUApplication.domain.UserInfoService;
 import IOUApplication.models.UserInfo;
 import org.springframework.http.HttpStatus;
@@ -14,33 +13,33 @@ import java.rmi.ServerException;
 public class UserInfoController {
     private final UserInfoService userInfoService;
 
-    public UserInfoController(UserInfoService userInfoService){
+    public UserInfoController(UserInfoService userInfoService) {
         this.userInfoService = userInfoService;
     }
 
     @PostMapping("/signUp")
-    public ResponseEntity<UserInfo> signUp(@RequestBody UserInfo newUserInfo){
+    public ResponseEntity<UserInfo> signUp(@RequestBody UserInfo newUserInfo) {
         UserInfo userInfo = userInfoService.signUp(newUserInfo);
-        if(userInfo != null){
+        if (userInfo != null) {
             return new ResponseEntity<>(userInfo, HttpStatus.CREATED);
         }
         return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Boolean> login(@RequestBody UserInfo userInfo){
+    public ResponseEntity<Boolean> login(@RequestBody UserInfo userInfo) {
         Boolean authed = userInfoService.login(userInfo);
-        if(authed){
+        if (authed) {
             return new ResponseEntity<>(authed, HttpStatus.OK);
         }
         return new ResponseEntity<>(authed, HttpStatus.FORBIDDEN);
     }
 
     @PutMapping("/updateAccount")
-    public ResponseEntity<Boolean> updateAccount(@RequestBody UserInfo additionalUserInfo){
+    public ResponseEntity<Boolean> updateAccount(@RequestBody UserInfo additionalUserInfo) {
         Boolean userInfo = userInfoService.updateAccount(additionalUserInfo);
 
-        if(userInfo){
+        if (userInfo) {
             return new ResponseEntity<>(userInfo, HttpStatus.OK);
         }
 

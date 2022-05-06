@@ -13,12 +13,13 @@ import IOUApplication.models.Bugs;
 @RequestMapping("/bug")
 public class BugController {
     private final BugService bugService;
-    public BugController(BugService bugService){
+
+    public BugController(BugService bugService) {
         this.bugService = bugService;
     }
 
     @GetMapping
-    public List<Bugs> findAll(){
+    public List<Bugs> findAll() {
         return bugService.findAll();
     }
 }

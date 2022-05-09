@@ -48,6 +48,26 @@ table {
   width: 100%;
 }
 
+.notif_div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.notif_num {
+  width: 100%;
+  text-align: right;
+}
+
+.notif_num .badge {
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
 tr {
   text-align: left;
   padding-top: 10px;

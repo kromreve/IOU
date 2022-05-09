@@ -71,7 +71,7 @@
             <div class="card__content">
               <div class="card__item">
                 <div class="title">Account Details</div>
-                <div class="inputPage">
+                <form class="inputPage" id = "update-account-form">
                   <div class="firstPage">
                     <div class="item">
                       <label class="label">name</label>
@@ -80,17 +80,17 @@
                         class="input"
                         id="inp"
                         placeholder="John Smith"
-                        readonly="readonly"
+                        
                       />
                     </div>
                     <div class="item2">
-                      <label class="label">username</label>
+                      <label class="label">email</label>
                       <input
                         type="text"
                         class="input"
                         id="inp2"
-                        placeholder="@JohnSmith"
-                        readonly="readonly"
+                        placeholder="JohnSmith@gmail.com"
+                        
                       />
                     </div>
                   </div>
@@ -102,7 +102,7 @@
                         id="inp3"
                         class="input"
                         placeholder="JoHnSmItH"
-                        readonly="readonly"
+                        
                       />
                     </div>
                     <div class="item2">
@@ -114,7 +114,7 @@
                         class="input"
                         id="inp4"
                         placeholder="651-555-2123"
-                        readonly="false"
+                        
                       />
                     </div>
                   </div>
@@ -122,16 +122,15 @@
                   <div class="item2">
                     <div class="pay_button">
                       <!--<button class="payment_submit" id="edit-btn">Edit</button>-->
-                      <input
+                      <button
                         class="payment_submit"
-                        onclick="change()"
-                        type="button"
-                        value="Edit"
+                        type="submit"
+                        value="Submit"
                         id="edit-btn"
-                      />
+                      >Submit</button>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

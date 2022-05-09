@@ -30,3 +30,34 @@ document.getElementById("edit-btn").onclick = function () {
     else diff.value = "Save";
     //document.getElementById("inp").removeAttribute("readonly");
   };
+
+
+  
+  
+  const form = document.getElementById("update-account-form")
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    var val = localStorage.getItem('userInfo');
+    var obj = JSON.parse(val);
+    console.log(obj.userID);
+    fetch("http://localhost:8080/userinfo/updateAccount", {
+     method:"PUT", 
+     headers:{
+       "Content-Type":"application/json"
+     },
+     body:JSON.stringify({
+       name: document.getElementById("inp").value,
+       email: document.getElementById("inp2").value,
+       password: document.getElementById("inp3").value,
+       phoneNumber: document.getElementById("inp4").value,
+       userID: obj.userID
+     })
+   }).then((res)=> {
+     if(res.status===201 || res.status===200 || res.status===204){
+       console.log("Sucess");
+     }else{
+       //error message
+     }
+   })
+ });

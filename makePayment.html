@@ -73,11 +73,12 @@
             <div class="card__content">
               <div class="card__item">
                 <div class="title">Payment</div>
-                <div class="inputPage">
+                <form class="inputPage" id="card-info">
                   <div class="firstPage">
                     <div class="item">
                       <label class="label">card number</label>
                       <input
+                        id="cardNumber"
                         type="text"
                         class="input"
                         placeholder="XXXX XXXX XXXX XXXX"
@@ -86,6 +87,7 @@
                     <div class="item2">
                       <label class="label">card holder</label>
                       <input
+                      id="name"
                         type="text"
                         class="input"
                         placeholder="Ex. John Smith"
@@ -95,21 +97,30 @@
                   <div class="secondPage">
                     <div class="item">
                       <label class="label">expire date</label>
-                      <input type="text" class="input" placeholder="MM / YY" />
+                      <input 
+                      type="text" 
+                      class="input" 
+                      placeholder="MM / YY" 
+                      id="expireDate"
+                      />
                     </div>
                     <div class="item2">
                       <div class="cvc">
                         <label class="label">cvc code</label>
                       </div>
-                      <input type="text" class="input" placeholder="XXX" />
+                      <input 
+                      type="text" 
+                      class="input" 
+                      placeholder="XXX" 
+                      id="cvc"
+                      />
                     </div>
                   </div>
-
                   <div class="item2">
                     <div class="pay_button">
                       <button
+                      type="submit"
                         class="payment_submit"
-                        onclick="window.location.href='paymentFinish.html'"
                       >
                         Submit
                       </button>
@@ -122,5 +133,7 @@
         </div>
       </div>
     </div>
+    <script src="js/cardInfo.js">
+    </script>
   </body>
 </html>

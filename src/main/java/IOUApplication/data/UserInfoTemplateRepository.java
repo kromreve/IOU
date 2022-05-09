@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.Statement;
-import java.util.List;
 
 @Repository
 public class UserInfoTemplateRepository {
@@ -58,12 +57,21 @@ public class UserInfoTemplateRepository {
     }
 
     public Boolean updateAccount(UserInfo userInfo){
-        String sql = "update UserInfo set `name` = ?, `password` = ?, `phoneNumber` = ? where `id` = ?;";
+        String sql = "update UserInfo set `name` = ?,`email` = ?, `password` = ?, `phoneNumber` = ? where `id` = ?;";
 
         return jdbcTemplate.update(sql,
                 userInfo.getName(),
+                userInfo.getEmail(),
                 userInfo.getPassword(),
                 userInfo.getPhoneNumber(),
+                userInfo.getUserID()) > 0;
+    }
+
+    public Boolean updateCard(UserInfo userInfo){
+        String sql = "update UserInfo set `bankacct_number` = ? where `id` = ?;";
+
+        return jdbcTemplate.update(sql,
+                userInfo.getBankacct_number(),
                 userInfo.getUserID()) > 0;
     }
 }

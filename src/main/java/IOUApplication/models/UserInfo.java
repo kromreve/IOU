@@ -7,18 +7,18 @@ public class UserInfo {
     private String name;
     private String email;
     private String phoneNumber;
-    private String bankAcctNumber;
+    private String bankacct_number;
     private String bankAcctName;
     private double acctBalance;
 
-    public UserInfo(int userID, String password, String name, String email, String phoneNumber, String bankAcctNumber,
+    public UserInfo(int userID, String password, String name, String email, String phoneNumber, String bankacct_number,
                     String bankAcctName, double acctBalance){
         this.userID = userID;
         this.password = password;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.bankAcctNumber = bankAcctNumber;
+        this.bankacct_number = bankacct_number;
         this.bankAcctName = bankAcctName;
         this.acctBalance = acctBalance;
     }
@@ -60,12 +60,12 @@ public class UserInfo {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getBankAcctNumber() {
-        return bankAcctNumber;
+    public String getBankacct_number() {
+        return bankacct_number;
     }
 
-    public void setBankAcctNumber(String bankAcctNumber) {
-        this.bankAcctNumber = bankAcctNumber;
+    public void setBankacct_number(String bankacct_number) {
+        this.bankacct_number = bankacct_number;
     }
 
     public String getBankAcctName() {
@@ -82,5 +82,19 @@ public class UserInfo {
 
     public void setAcctBalance(double acctBalance) {
         this.acctBalance = acctBalance;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "userID=" + userID +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", bankacct_number='" + bankacct_number + '\'' +
+                ", bankAcctName='" + bankAcctName + '\'' +
+                ", acctBalance=" + acctBalance +
+                '}';
     }
 }

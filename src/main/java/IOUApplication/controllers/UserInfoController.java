@@ -27,9 +27,15 @@ public class UserInfoController {
     }
 
     @PostMapping("/login")
+<<<<<<< HEAD
     public ResponseEntity<Boolean> login(@RequestBody UserInfo userInfo) {
         Boolean authed = userInfoService.login(userInfo);
         if (authed) {
+=======
+    public ResponseEntity<UserInfo> login(@RequestBody UserInfo userInfo){
+        UserInfo authed = userInfoService.login(userInfo);
+        if(authed!=null){
+>>>>>>> 4725a48ea60417bf9c243c09dd00abefc6cae6ec
             return new ResponseEntity<>(authed, HttpStatus.OK);
         }
         return new ResponseEntity<>(authed, HttpStatus.FORBIDDEN);
@@ -45,5 +51,16 @@ public class UserInfoController {
 
         return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
 
+    }
+
+    @PutMapping("/updateCard")
+    public ResponseEntity<Boolean> updateCard(@RequestBody UserInfo additionalUserInfo){
+        Boolean userInfo = userInfoService.updateCard(additionalUserInfo);
+
+        if(userInfo){
+            return new ResponseEntity<>(userInfo, HttpStatus.OK);
+        }
+
+        return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
     }
 }

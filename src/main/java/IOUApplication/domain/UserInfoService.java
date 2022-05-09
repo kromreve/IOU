@@ -17,16 +17,20 @@ public class UserInfoService {
        return userInfoTemplateRepository.signUp(userInfo);
     }
 
-    public Boolean login(UserInfo userInfo){
+    public UserInfo login(UserInfo userInfo){
         UserInfo foundUser = userInfoTemplateRepository.findByName(userInfo.getEmail());
 
-        if(foundUser == null) return false;
-        if(foundUser.getPassword().equals(userInfo.getPassword())) return true;
+        if(foundUser == null) return null;
+        if(foundUser.getPassword().equals(userInfo.getPassword())) return foundUser;
 
-        return false;
+        return null;
     }
 
     public Boolean updateAccount(UserInfo userInfo){
         return userInfoTemplateRepository.updateAccount(userInfo);
+    }
+
+    public Boolean updateCard(UserInfo userInfo){
+        return userInfoTemplateRepository.updateCard(userInfo);
     }
 }

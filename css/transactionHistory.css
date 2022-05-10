@@ -74,3 +74,29 @@ td {
 .green {
   color: rgb(0, 228, 0);
 }
+
+.notif_div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.notif_num {
+  width: 100%;
+  text-align: right;
+}
+
+.notif_num .badge {
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.spread {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+}

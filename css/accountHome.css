@@ -72,6 +72,12 @@
   color: white;
 }
 
+.spread {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
 .inputPage,
 .inputPage .item {
   margin-bottom: 20px;

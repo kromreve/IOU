@@ -18,7 +18,7 @@ public class TransactionController {
     }
 
     @PutMapping
-    public boolean transaction(@RequestBody MoneyTransaction mt){
+    public boolean transaction(@RequestBody MoneyTransaction mt) {
         return transactionService.transaction(mt);
     }
 }

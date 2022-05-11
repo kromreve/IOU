@@ -33,6 +33,11 @@ document.getElementById("edit-btn").onclick = function () {
 
 
   
+  var val = localStorage.getItem('userInfo');
+  var obj = JSON.parse(val);
+  document.getElementById("username").innerText = obj.name;
+  
+  
   
   const form = document.getElementById("update-account-form")
   form.addEventListener('submit', (e) => {

@@ -20,7 +20,7 @@
         </a>
         <div class="toolbar">
           <div>
-            <p>Welcome Back!</p>
+            <p>Welcome Back, <span id="username"></span></p>
           </div>
           <div class="toolbar__right">
             <a href="home.html" class="btn btn--primary logout">Log Out</a>
@@ -155,5 +155,10 @@
         </div>
       </div>
     </div>
+    <script>
+        var val = localStorage.getItem('userInfo');
+        var obj = JSON.parse(val);
+        document.getElementById("username").innerText = obj.name;
+    </script>
   </body>
 </html>

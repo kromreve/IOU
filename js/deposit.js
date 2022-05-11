@@ -19,3 +19,7 @@ function myFunction() {
       }
     }
   }
+
+  var val = localStorage.getItem('userInfo');
+  var obj = JSON.parse(val);
+  document.getElementById("username").innerText = obj.name;

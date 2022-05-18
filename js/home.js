@@ -92,7 +92,11 @@ form.addEventListener('submit', (e) => {
     })
   }).then((res) => {
     if (res.status === 201) {
-      window.location.href = 'userHome.html';
+      res.json().then(data => {
+        localStorage.setItem("userInfo", JSON.stringify(data));
+        //console.log(JSON.parse(localStorage.getItem("userInfo")));
+        window.location.href='userHome.html';
+      })
     } else {
       //error message
     }

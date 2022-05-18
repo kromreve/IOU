@@ -46,3 +46,28 @@ rep_openBtn.addEventListener('click', () => {
         con_model.style.display = 'none';
       }
     });  
+
+
+const errorForm = document.getElementById("rep-form");
+
+errorForm.addEventListener('submit', (e) => {
+e.preventDefault();
+
+
+
+  fetch("http://localhost:8080/bug/reportError", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      description: document.getElementById('error-report-text').value
+    })
+  }).then((res) => {
+    if (res.status === 201) {
+      window.location.href='contactPage.html';
+    } else {
+      //error message
+    }
+  })
+});

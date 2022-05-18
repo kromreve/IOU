@@ -80,56 +80,56 @@
             <div class="card__content">
               <div class="card__item">
                 <div class="title">Payment</div>
-                <div class="inputPage">
-                  <div class="firstPage">
-                    <div class="item">
-                      <label class="label">search</label>
-                      <input
-                        type="text"
-                        class="input"
-                        placeholder="Ex. @JohnSmith"
-                      />
-                      <button class="search">Search</button>
+                <form action="/" id="payment-form">
+                  <div class="inputPage">
+                    <div class="firstPage">
+                      <div class="item">
+                        <label class="label">search</label>
+                        <input
+                          id="receiverName"
+                          type="text"
+                          class="input"
+                          placeholder="Ex. @JohnSmith"
+                        />
+                        <button class="search">Search</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="secondPage">
-                    <div class="item2">
-                      <label class="label2"
-                        >How much do you want to pay [USER]</label
-                      >
-                      <input
-                        type="text"
-                        class="input"
-                        placeholder="$1,000,000.00"
-                      />
+                    <div class="secondPage">
+                      <div class="item2">
+                        <label class="label2"
+                          >How much do you want to pay [USER]</label
+                        >
+                        <input
+                          id="amount"
+                          type="text"
+                          class="input"
+                          placeholder="$1,000,000.00"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="fourthPage">
-                    <div class="item4">
+                    <div class="fourthPage">
+                      <div class="item4">
+                      
+                        <h2>Message Box:</h2>
+                        <input type="text" class="hide" id="textInput">
+                      </div>
+                    </div>
                     
-                      <h2>Message Box:</h2>
-                      <input type="text" class="hide" id="textInput">
+                  </div>
+                    <div class="thirdPage">
+                      <div class="item3">
+                        <button class="finish_pay_btn" type="submit">Finish Payment</button>
+                      </div>
                     </div>
                   </div>
-                  
-                </div>
-                  <div class="thirdPage">
-                    <div class="item3">
-                      <button class="finish_pay_btn" onclick="window.location.href='confirmPayment.html'">Finish Payment</button>
-                    </div>
-                  </div>
-                </div>
-                
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-        var val = localStorage.getItem('userInfo');
-        var obj = JSON.parse(val);
-        document.getElementById("username").innerText = obj.name;
+    <script src="js/paymentFinish.js">
     </script>
   </body>
 </html>
